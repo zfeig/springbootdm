@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p>test for template=>themeleaf</p>
+<p th:text="'name test: ' + ${name} + '!'" />
+<p>model test:</p>
+<dl>
+    <dt>user info:</dt>
+    <dd th:text="'uname:' + ${user.name}"></dd>
+    <dd th:text="'uemail:' + ${user.email}"></dd>
+    <dd th:text="'uid:' + ${user.id}"></dd>
+</dl>
+<p><img src="/springmvc.png" style="with:100px;height: auto;"></p>
+</body>
+</html>

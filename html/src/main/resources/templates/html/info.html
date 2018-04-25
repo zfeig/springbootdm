@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>system info</title>
+</head>
+<body>
+<p>
+   <dl>
+    <dt>system:</dt>
+    <dd th:text="'url:'+ ${url}"></dd>
+    <dd th:text="'username:'+ ${username}"></dd>
+</dl>
+</p>
+
+</body>
+</html>
