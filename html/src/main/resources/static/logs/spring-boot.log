@@ -1,0 +1,205 @@
+Starting HtmlApplication on MRW4JQQKZ94BWUA with PID 3900 (F:\springboot\html\target\classes started by Administrator in F:\springboot\html)
+The following profiles are active: dev
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a6afc10: startup date [Thu May 03 08:54:53 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$58c6191d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.29
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\Python27\;D:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\php\php7.2.5;D:\Program Files (x86)\Git\cmd;C:\Program Files\TortoiseSVN\bin;D:\Program Files\nodejs\;D:\go\bin;D:\Program Files (x86)\Yarn\bin\;C:\Program Files\Java\jdk1.8.0_171\bin;D:\Program Files\apache-maven-3.5.3\bin;C:\zend\bin;D:\Program Files\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Local\Yarn\bin;.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2426 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.16.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Method [java.util.List springfox.documentation.schema.property.OptimizedModelPropertiesProvider.candidateProperties(com.fasterxml.classmate.ResolvedType,com.fasterxml.jackson.databind.introspect.AnnotatedMember,com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition,springfox.documentation.spi.schema.contexts.ModelContext)] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/api/users],methods=[GET]}" onto public java.util.List<com.istore.html.User> com.istore.html.ApiController.getAllUsers()
+Mapped "{[/api/user],methods=[GET || POST]}" onto public java.lang.String com.istore.html.ApiController.addUser(java.lang.String,java.lang.String)
+Mapped "{[/api/{id}],methods=[GET]}" onto public com.istore.html.User com.istore.html.ApiController.findOneById(int)
+Mapped "{[/api/detail/{name}],methods=[GET]}" onto public java.util.List<com.istore.html.User> com.istore.html.ApiController.findOneByName(java.lang.String)
+Mapped "{[/html/test],methods=[GET]}" onto public java.lang.String com.istore.html.HtmlController.test()
+Mapped "{[/html/info],methods=[GET]}" onto public java.lang.String com.istore.html.HtmlController.info(org.springframework.ui.ModelMap)
+Mapped "{[/html/msg/{id}],methods=[GET]}" onto public java.lang.String com.istore.html.HtmlController.msg(int,org.springframework.ui.ModelMap)
+Mapped "{[/crud/all],methods=[GET]}" onto public java.util.List<com.istore.html.User> com.istore.html.UserController.getAllUsers()
+Mapped "{[/crud/add],methods=[GET]}" onto public java.lang.String com.istore.html.UserController.addUser(java.lang.String,java.lang.String)
+Mapped "{[/crud/id/{id}],methods=[GET]}" onto public com.istore.html.User com.istore.html.UserController.findOneById(int)
+Mapped "{[/crud/name/{name}],methods=[GET]}" onto public java.util.List<com.istore.html.User> com.istore.html.UserController.findOneByName(java.lang.String)
+Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a6afc10: startup date [Thu May 03 08:54:53 CST 2018]; root of context hierarchy
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in globalExceptionHandler
+LiveReload server is running on port 35729
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Context refreshed
+Found {0} custom documentation plugin(s)
+Scanning for api listing references
+Group for method findOneByName was api-controller
+Request mapping: findOneByName belongs to groups: [[ResourceGroup{groupName='api-controller', position=0, controller=com.istore.html.ApiController}]] 
+Group for method addUser was api-controller
+Request mapping: addUser belongs to groups: [[ResourceGroup{groupName='api-controller', position=0, controller=com.istore.html.ApiController}]] 
+Group for method getAllUsers was api-controller
+Request mapping: getAllUsers belongs to groups: [[ResourceGroup{groupName='api-controller', position=0, controller=com.istore.html.ApiController}]] 
+Group for method findOneById was api-controller
+Request mapping: findOneById belongs to groups: [[ResourceGroup{groupName='api-controller', position=0, controller=com.istore.html.ApiController}]] 
+Group for method addUser was user-controller
+Request mapping: addUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.istore.html.UserController}]] 
+Group for method getAllUsers was user-controller
+Request mapping: getAllUsers belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.istore.html.UserController}]] 
+Group for method findOneById was user-controller
+Request mapping: findOneById belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.istore.html.UserController}]] 
+Group for method findOneByName was user-controller
+Request mapping: findOneByName belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.istore.html.UserController}]] 
+Group for method info was html-controller
+Request mapping: info belongs to groups: [[ResourceGroup{groupName='html-controller', position=0, controller=com.istore.html.HtmlController}]] 
+Group for method msg was html-controller
+Request mapping: msg belongs to groups: [[ResourceGroup{groupName='html-controller', position=0, controller=com.istore.html.HtmlController}]] 
+Group for method test was html-controller
+Request mapping: test belongs to groups: [[ResourceGroup{groupName='html-controller', position=0, controller=com.istore.html.HtmlController}]] 
+Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+Created resource listing Path: /default/html-controller Description: html-controller Position: 0
+Created resource listing Path: /default/api-controller Description: api-controller Position: 0
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache models with key java.lang.String(true)
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+Cache key generated: /api/user.com.istore.html.ApiController.addUser.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/user.com.istore.html.ApiController.addUser.DefaultGenericTypeNamingStrategy
+Group for method addUser was api-controller
+Group for method addUser was api-controller
+Group for method addUser was api-controller
+Group for method addUser was api-controller
+Cache Key Generated: com.istore.html.User(true)
+Caching aspect applied for cache models with key com.istore.html.User(true)
+Cache key generated: com.istore.html.User(true)
+Caching aspect applied for cache modelProperties with key com.istore.html.User(true)
+Cache Key Generated: com.istore.html.User(true)
+Caching aspect applied for cache modelDependencies with key com.istore.html.User(true)
+Cache key generated: com.istore.html.User(true)
+Caching aspect applied for cache modelProperties with key com.istore.html.User(true)
+Cache key generated: /api/{id}.com.istore.html.ApiController.findOneById.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/{id}.com.istore.html.ApiController.findOneById.DefaultGenericTypeNamingStrategy
+Group for method findOneById was api-controller
+Group for method findOneById was api-controller
+Cache Key Generated: java.util.List<com.istore.html.User>(true)
+Caching aspect applied for cache models with key java.util.List<com.istore.html.User>(true)
+Cache Key Generated: java.util.List<com.istore.html.User>(true)
+Caching aspect applied for cache modelDependencies with key java.util.List<com.istore.html.User>(true)
+Cache key generated: com.istore.html.User(true)
+Caching aspect applied for cache modelProperties with key com.istore.html.User(true)
+Cache key generated: java.util.List<com.istore.html.User>(true)
+Caching aspect applied for cache modelProperties with key java.util.List<com.istore.html.User>(true)
+Cache key generated: com.istore.html.User(true)
+Caching aspect applied for cache modelProperties with key com.istore.html.User(true)
+Cache key generated: /api/detail/{name}.com.istore.html.ApiController.findOneByName.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/detail/{name}.com.istore.html.ApiController.findOneByName.DefaultGenericTypeNamingStrategy
+Group for method findOneByName was api-controller
+Group for method findOneByName was api-controller
+Cache Key Generated: java.util.List<com.istore.html.User>(true)
+Caching aspect applied for cache models with key java.util.List<com.istore.html.User>(true)
+Cache Key Generated: java.util.List<com.istore.html.User>(true)
+Caching aspect applied for cache modelDependencies with key java.util.List<com.istore.html.User>(true)
+Cache key generated: com.istore.html.User(true)
+Caching aspect applied for cache modelProperties with key com.istore.html.User(true)
+Cache key generated: /api/users.com.istore.html.ApiController.getAllUsers.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/users.com.istore.html.ApiController.getAllUsers.DefaultGenericTypeNamingStrategy
+Group for method getAllUsers was api-controller
+Group for method getAllUsers was api-controller
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache models with key java.lang.String(true)
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+Cache key generated: /html/info.com.istore.html.HtmlController.info.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /html/info.com.istore.html.HtmlController.info.DefaultGenericTypeNamingStrategy
+Group for method info was html-controller
+Group for method info was html-controller
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache models with key java.lang.String(true)
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+Cache key generated: /html/msg/{id}.com.istore.html.HtmlController.msg.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /html/msg/{id}.com.istore.html.HtmlController.msg.DefaultGenericTypeNamingStrategy
+Group for method msg was html-controller
+Group for method msg was html-controller
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache models with key java.lang.String(true)
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+Cache key generated: /html/test.com.istore.html.HtmlController.test.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /html/test.com.istore.html.HtmlController.test.DefaultGenericTypeNamingStrategy
+Group for method test was html-controller
+Group for method test was html-controller
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache models with key java.lang.String(true)
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+Cache key generated: /crud/add.com.istore.html.UserController.addUser.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /crud/add.com.istore.html.UserController.addUser.DefaultGenericTypeNamingStrategy
+Group for method addUser was user-controller
+Group for method addUser was user-controller
+Generating unique operation named: addUserUsingGET_1
+Cache Key Generated: com.istore.html.User(true)
+Caching aspect applied for cache models with key com.istore.html.User(true)
+Cache Key Generated: com.istore.html.User(true)
+Caching aspect applied for cache modelDependencies with key com.istore.html.User(true)
+Cache key generated: /crud/id/{id}.com.istore.html.UserController.findOneById.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /crud/id/{id}.com.istore.html.UserController.findOneById.DefaultGenericTypeNamingStrategy
+Group for method findOneById was user-controller
+Group for method findOneById was user-controller
+Generating unique operation named: findOneByIdUsingGET_1
+Cache Key Generated: java.util.List<com.istore.html.User>(true)
+Caching aspect applied for cache models with key java.util.List<com.istore.html.User>(true)
+Cache Key Generated: java.util.List<com.istore.html.User>(true)
+Caching aspect applied for cache modelDependencies with key java.util.List<com.istore.html.User>(true)
+Cache key generated: com.istore.html.User(true)
+Caching aspect applied for cache modelProperties with key com.istore.html.User(true)
+Cache key generated: /crud/name/{name}.com.istore.html.UserController.findOneByName.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /crud/name/{name}.com.istore.html.UserController.findOneByName.DefaultGenericTypeNamingStrategy
+Group for method findOneByName was user-controller
+Group for method findOneByName was user-controller
+Generating unique operation named: findOneByNameUsingGET_1
+Cache Key Generated: java.util.List<com.istore.html.User>(true)
+Caching aspect applied for cache models with key java.util.List<com.istore.html.User>(true)
+Cache Key Generated: java.util.List<com.istore.html.User>(true)
+Caching aspect applied for cache modelDependencies with key java.util.List<com.istore.html.User>(true)
+Cache key generated: com.istore.html.User(true)
+Caching aspect applied for cache modelProperties with key com.istore.html.User(true)
+Cache key generated: /crud/all.com.istore.html.UserController.getAllUsers.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /crud/all.com.istore.html.UserController.getAllUsers.DefaultGenericTypeNamingStrategy
+Group for method getAllUsers was user-controller
+Group for method getAllUsers was user-controller
+Generating unique operation named: getAllUsersUsingGET_1
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path ''
+Started HtmlApplication in 6.31 seconds (JVM running for 8.319)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+id is:1
+HHH000397: Using ASTQueryTranslatorFactory
+obj:User{id=1, name='lisi', email='lisi@126.com'}
+this is error log
+this is warn log
